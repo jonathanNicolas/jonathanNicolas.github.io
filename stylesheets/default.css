@@ -1,0 +1,56 @@
+
+body {
+  background-color: white;
+}
+
+#container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  min-width: 700px;
+  max-width: 1024px;
+
+
+}
+
+header {
+  height: 10em;
+  background-color: blue;
+
+}
+
+h1 {
+  font-family: Verdana;
+  font-size: 1.75em;
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+}
+
+aside img {
+  float: left;
+  width: 140px;
+  height: 140px;
+  padding: 15px;
+}
+
+nav {
+  position:none;
+  display:inline-block;
+  margin-right: 20em;
+}
+
+
+p {
+  font-family: arial;
+}
+
+
+
+footer {
+  height: 80px;
+  background-color: white;
+}
+
+
