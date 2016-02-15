@@ -1,23 +1,45 @@
-nav {
+section {
   position: relative;
-  padding-left: 65px;
+  float:right;
+  width: 60%;
+  padding: 5%;
+  margin-bottom: 20%;
+
 }
 
-ul {
-  position: relative;
-  margin: 20px 30px 30px 30px;
+h1 {
+  position:relative;
+  top: 5px;
+  text-align: center;
+  font-size: 33px;
 }
 
-aside {
+#blogList {
+  position: fixed;
   float: left;
-  margin-bottom: 100%;
+  padding: 5%;
+  top: 100px;
+  left: 50px;
+  font-size: 20px;
 }
 
-aside li {
-  width: 140px;
-  padding-bottom: 15px;
+#networkList {
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  word-spacing: 50px;
+}
+
+#networkList p {
+  display: inline;
+  font-size: 20px;
 }
 
 footer {
+  position: fixed;
   width: 100%;
+  bottom: 0;
+  background-color: white;
+  border-top: 2px solid black;
 }
+
