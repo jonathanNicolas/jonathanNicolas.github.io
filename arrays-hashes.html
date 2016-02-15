@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheets/blog.css">
+  </head>
+
+  <body>
+    <main>
+      <section>
+        <h1>Arrays & Hashes</h1>
+        <h2>Describing and comparing arrays and hashes</h2>
+        <p>Ruby arrays are ordered, integer-indexed collections of any object. Each element in an array is associated with and referred to by an index.</p>
+        <p>Example</p>
+        <p>nums = Array[1, 2, 3, 4,5]</p>
+        <p>Hashes are similar to arrays in that they are indexed collection of object references. However, while you index arrays with integers, you can index a hash with objects of any types: strings, regular expressions, and so on. When you store a value in a hash, you actually supply two objects - the index (normally called the key) and the value. You can subsequently retrieve the value by indexing the hash with the same key. The values in a hash can be objects of any type.</p>
+        <p>Example</p>
+        <p>names = Hash.new </br>
+names[1] = "Jonathan"</br>
+names[2] = "Simon"</br></p>
+      </section>
+      <nav id="blogList">
+        <p><a href="#">Blog Home</a></p>
+        <p><a href="#">Blog 1</a></p>
+        <p><a href="#">Blog 2</a></p>
+        <p><a href="#">Blog 3</a></p>
+        <p><a href="#">Blog 4</a></p>
+        <p><a href="#">Blog 5</a></p>
+      </nav>
+    </main>
+    <footer>
+      <nav id="networkList">
+        <p><a href="#">Home</a></p>
+        <p><a href="#">LinkedIn</a></p>
+        <p><a href="#">GitHub</a></p>
+        <p><a href="#">Contact</a></p>
+      </nav>
+    </footer>
+  </body>
+</html>
