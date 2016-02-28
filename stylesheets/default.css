@@ -1,3 +1,118 @@
+/** {
+    border: 1px solid red !important;
+}*/
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.grid {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+header{
+  color:#BCBBBB;
+}
+h1{
+  text-align:right;
+}
+
+header h3{
+  text-align:right;
+}
+
+
+.container{
+  margin: 80px;
+}
+header{
+  background-color: white;
+  font-size: 30px;
+  border-style: solid 5px;
+  border-bottom-color: "#BCBBB";
+}
+header img{
+  width: 250px;
+
+}
+
+.col-4 h3{
+  font-size: 40px;
+  color: #747704;
+}
+
+#Featured-Work{
+  color:#BCBBBB
+}
+
+
+
+
+
+/*
 
 body {
   background-color: white;
@@ -52,5 +167,5 @@ footer {
   height: 80px;
   background-color: white;
 }
-
+*/
 
