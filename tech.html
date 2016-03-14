@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheets/blog.css">
+  </head>
+
+  <body>
+    <main>
+      <section>
+        <h1>SORTING</h1>
+        <h2>Describing Quick Sort</h2>
+        <p>Quicksort is a fast sorting algorithm, which is used not only for educational purposes, but widely applied in practice. Quicksort suitable for sorting big data volumes. </p>
+        <ol>
+          <li>Choose a pivot value. We take the value of the middle element as pivot value, but it can be any value, which is in range of sorted values, even if it doesn't present in the array.</li>
+          <li>Partition. Rearrange elements in such a way, that all elements which are lesser than the pivot go to the left part of the array and all elements greater than the pivot, go to the right part of the array. Values equal to the pivot can stay in any part of the array. Notice, that array may be divided in non-equal parts.</li>
+          <li>Sort both parts. Apply quicksort algorithm recursively to the left and the right parts</li>
+        </ol>
+
+        <h2>Describing Buble Sort</h2>
+        <p>Bubble sort is a simple and well-known sorting algorithm. It is used in practice once in a blue moon and its main application is to make an introduction to the sorting algorithms. Bubble sort is stable and adaptive.</p>
+        <ol>
+          <li>Compare each pair of adjacent elements from the beginning of an array and, if they are in reversed order, swap them.</li>
+          <li>If at least one swap has been done, repeat step 1</li>
+          <li>Sort both parts. Apply quicksort algorithm recursively to the left and the right parts</li>
+        </ol>
+
+        <h2>Describing Merge Sort</h2>
+        <p>Mergesort is a divide and conquer algorithm that was invented by John von Neumann in 1945</p>
+        <ol>
+          <li>Divide the unsorted list into n sublists, each containing 1 element (a list of 1 element is considered sorted).</li>
+          <li>Repeatedly merge sublists to produce new sorted sublists until there is only 1 sublist remaining. This will be the sorted list.</li>
+
+        </ol>
+
+        <p></p>
+
+      </section>
+
+      <nav id="blogList">
+        <p><a href="#">Blog Home</a></p>
+        <p><a href="arrays-hashes.html">Blog 1</a></p>
+        <p><a href="enumerable-methods.html">Blog 2</a></p>
+        <p><a href="ruby-classes.html">Blog 3</a></p>
+        <p><a href="tech.html">Blog 4</a></p>
+        <p><a href="#">Blog 5</a></p>
+      </nav>
+    </main>
+    <footer>
+      <nav id="networkList">
+        <p><a href="#">Home</a></p>
+        <p><a href="#">LinkedIn</a></p>
+        <p><a href="#">GitHub</a></p>
+        <p><a href="#">Contact</a></p>
+      </nav>
+    </footer>
+  </body>
+</html>
