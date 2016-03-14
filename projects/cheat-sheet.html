@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="cheat-sheet.css">  <!-- Insert a link to the stylesheet here -->
+    <title>Javascript Cheat Sheet</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>GitHub: Javascript Cheat Sheet</h1>
+      <p> JavaScript is a major Web technology that provides interactivity and special effects to webpages.</p>
+    </header>
+
+    <section class="column-1">
+      <article>
+        <h2>Program Structure</h2>
+        <p>The else keyword can be used, together with if, to create two seperate alternatives</p>
+        <pre>
+        var theNumber = Number(prompt("Pick a number", ""));
+        if (!isNan(theNumber))
+          alert("Your number is the square root of " + theNumber * theNumber)
+        else
+          alert("Hey. why didn't you give me a number?");
+        </pre>
+
+        <p>Looping control flow allows us to go back to some point in the program where we were before and repeat it with our current program state</p>
+
+        <ul>
+          <li><pre> While loop
+        var result = 1;
+        var counter = 0;
+        while (counter < 10){
+          result = result * 2;
+          counter = counter + 1;
+        }
+        </pre></li>
+          <li><pre> For loop
+        for (var current = 20; ; current ++) {
+          if (current % 7 == 0)
+            break;
+        }
+        </pre></li>
+        </ul>
+
+
+
+      </article>
+
+      <article>
+        <h2>Functions</h2>
+        <p><h3>To see a summary of each command, click it.</h3></p>
+
+        <details>
+          <summary>Defining a function</summary>
+          <p><pre>
+          var square = function(x){
+            return x * x;
+          };
+          </pre></p>
+        </details>
+
+        <details>
+          <summary>Recursion</summary>
+          <p>A function that calls itself is called recursive</p>
+        </details>
+
+        <!-- <details>
+          <summary><code>$ git config --global color.ui auto</code></summary>
+          <p>Enables helpful colorization of command line output</p>
+        </details> -->
+      </article>
+
+      <!-- <article>
+        <h2>CREATE REPOSITORIES</h2>
+        <p>Start a new repository or obtain one from an existing URL</p>
+
+        <details>
+          <summary><code>$ git init [project-name]</code></summary>
+          <p>Creates a new local repository with the specified name</p>
+        </details>
+
+        <details>
+          <summary><code>$ git clone [url]</code></summary>
+          <p>Downloads a project and its entire version history</p>
+        </details>
+      </article>
+
+      <article>
+        <h2>MAKE CHANGES</h2>
+        <p>Review edits and craft a commit transaction</p>
+
+        <details>
+          <summary><code>$ git status</code></summary>
+          <p>Lists all new or modified files to be committed</p>
+        </details>
+
+        <details>
+          <summary><code>$ git add [file]</code></summary>
+          <p>Snapshots the file in preparation for versioning</p>
+        </details>
+
+        <details>
+          <summary><code>$ git reset [file]</code></summary>
+          <p>Unstages the file, but preserve its contents</p>
+        </details>
+
+        <details>
+          <summary><code>$ git diff</code></summary>
+          <p>Shows file differences not yet staged</p>
+        </details>
+
+        <details>
+          <summary><code>$ git diff --staged</code></summary>
+          <p>Shows file differences between staging and the last file version</p>
+        </details>
+
+        <details>
+          <summary><code>$ git commit -m "[descriptive message]"</code></summary>
+          <p>Records file snapshots permanently in version history</p>
+        </details>
+      </article>
+
+      <article>
+        <h2>GROUP CHANGES</h2>
+        <p>Name a series of commits and combine completed efforts</p>
+
+        <details>
+          <summary><code>$ git branch</code></summary>
+          <p>Lists all local branches in the current repository</p>
+        </details>
+
+        <details>
+          <summary><code>$ git branch [branch-name]</code></summary>
+          <p>Creates a new branch</p>
+        </details>
+
+        <details>
+          <summary><code>$ git checkout [branch-name]</code></summary>
+          <p>Switches to the specified branch and updates the working directory</p>
+        </details>
+
+        <details>
+          <summary><code>$ git merge [branch]</code></summary>
+          <p>Combines the specified branch’s history into the current branch</p>
+        </details>
+
+        <details>
+          <summary><code>$ git branch -d [branch-name]</code></summary>
+          <p>Deletes the specified branch</p>
+        </details>
+      </article> -->
+    </section>
+
+    <section class="column-2">
+      <article>
+        <h2>Data Structures: Objects and Arrays</h2>
+
+        <details>
+          <summary>Data Sets</summary>
+          <p>Javascript provides a data type specifically for storing sequences of values it is called an array</p>
+        </details>
+
+        <details>
+          <summary>Properties</summary>
+          <p>The two most common way to access properties in Javascript are with the dot notation and with square brackets. Both value.x and value[x] access property on value</p>
+        </details>
+
+        <details>
+          <summary>Objects</summary>
+          <p>Values of the type object are arbitrary collections of properties, one way to create an object is by using a brace notation</p>
+        </details>
+        <pre>
+          var day1 = {
+          squirrel: false,
+          events: ["work", "touched tree", "pizza"]
+          }
+        </pre>
+      </article>
+
+      <article>
+        <h2>Higer-Order Functions</h2>
+        <p>Exclude temporary files and paths</p>
+
+        <details>
+          <summary>Abstracting array traversal</summary>
+          <p></p>
+        </details>
+
+        <details>
+          <summary>Higher-Order Functions</summary>
+          <p>functions that operate on other functions, either by taking them as arguments or by returning them</p>
+        </details>
+      </article>
+
+      <article>
+        <!-- <h2>SAVE FRAGMENTS</h2>
+        <p>Shelve and restore incomplete changes</p>
+
+        <details>
+          <summary><code>$ git stash</code></summary>
+          <p>Temporarily stores all modified tracked files</p>
+        </details>
+
+        <details>
+          <summary><code>$ git stash list</code>Lists all stashed changesets</summary>
+          <p></p>
+        </details>
+
+        <details>
+          <summary><code>$ git stash pop</code></summary>
+          <p>Restores the most recently stashed files</p>
+        </details>
+
+        <details>
+          <summary><code>$ git stash drop</code></summary>
+          <p>Discards the most recently stashed changeset</p>
+        </details>
+
+      </article>
+
+      <article>
+        <h2>REVIEW HISTORY</h2>
+        <p>Browse and inspect the evolution of project files</p>
+
+        <details>
+          <summary><code>$ git log</code></summary>
+          <p>Lists version history for the current branch</p>
+        </details>
+
+        <details>
+          <summary><code>$ git log --follow [file]</code></summary>
+          <p>Lists version history for a file, including renames</p>
+        </details>
+
+        <details>
+          <summary><code>$ git diff [first-branch]...[second-branch]</code></summary>
+          <p>Shows content differences between two branches</p>
+        </details>
+
+        <details>
+          <summary><code>$ git show [commit]</code></summary>
+          <p>Outputs metadata and content changes of the specified commit</p>
+        </details>
+      </article>
+
+      <article>
+        <h2>REDO COMMITS</h2>
+        <p>Erase mistakes and craft replacement history</p>
+
+        <details>
+          <summary><code>$ git reset [commit]</code></summary>
+          <p>Undoes all commits after [commit], preserving changes locally</p>
+        </details>
+
+        <details>
+          <summary><code>$ git reset --hard [commit]</code></summary>
+          <p>Discards all history and changes back to the specified commit</p>
+        </details>
+      </article>
+
+      <article>
+        <h2>SYNCHRONIZE CHANGES</h2>
+        <p>Register a repository bookmark and exchange version history</p>
+
+        <details>
+          <summary><code>$ git fetch [bookmark]</code></summary>
+          <p>Downloads all history from the repository bookmark</p>
+        </details>
+
+        <details>
+          <summary><code>$ git merge [bookmark]/[branch]</code></summary>
+          <p>Combines bookmark’s branch into current local branch</p>
+        </details>
+
+        <details>
+          <summary><code>$ git push [alias] [branch]</code></summary>
+          <p>Uploads all local branch commits to GitHub</p>
+        </details>
+
+        <details>
+          <summary><code>$ git pull</code></summary>
+          <p>Downloads bookmark history and incorporates changes</p>
+        </details>
+      </article> -->
+    </section>
+
+    <footer>
+      This information is copied directly from <a href="https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf">Javascript's Training Cheatsheet</a>.
+    </footer>
+  <!-- Add your reflection here as a comment. -->
+  </body>
+
+
+
+
+</html>
